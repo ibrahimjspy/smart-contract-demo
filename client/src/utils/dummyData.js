@@ -1,4 +1,5 @@
-
+// This is where dummy addresses and tokens will be stored 
+//Currently only five because of task demand 
 export default [
   {
     id: 1,
