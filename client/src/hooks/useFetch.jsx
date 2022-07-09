@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 // frontend api link you can sign in giphy for frontend api link 
-const APIKEY = import.meta.env.VITE_GIPHY_API; 
+const APIKEY = import.meta.env.VITE_GIPHY_API; // you need this api 
+// for frontend full fledge integration 
 // custom hook 
 const useFetch = ({ keyword }) => {
   const [gifUrl, setGifUrl] = useState("");
