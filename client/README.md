@@ -1,6 +1,6 @@
 # Basic Sample Hardhat Project
 Setting up react is pretty much standard 
-cd in client 
+cd client 
 npm install 
 npm start 
 
