@@ -10,6 +10,7 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
   const gifUrl = useFetch({ keyword });
 
   return (
+    // frontend integration with transaction context api 
     <div className="bg-[#181918] m-4 flex flex-1
       2xl:min-w-[450px]
       2xl:max-w-[500px]
@@ -53,6 +54,7 @@ const Transactions = () => {
   return (
     <div className="flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions">
       <div className="flex flex-col md:p-12 py-12 px-4">
+        {/* Metamask check and connection validation  */}
         {currentAccount ? (
           <h3 className="text-white text-3xl text-center my-2">
             Latest Transactions
@@ -64,6 +66,7 @@ const Transactions = () => {
         )}
 
         <div className="flex flex-wrap justify-center items-center mt-10">
+          {/* Dummy tokens and addresses connection with frontend  */}
           {[...dummyData, ...transactions].reverse().map((transaction, i) => (
             <TransactionsCard key={i} {...transaction} />
           ))}
